@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>周四晚上练习</title>
     <link type="text/css" href="index.css" rel="stylesheet">
-    <link type="text/css" href="//at.alicdn.com/t/font_836817_9dsw3ws63jn.css" rel="stylesheet">
+    <link type="text/css" href="//at.alicdn.com/t/font_836817_2ofroth5osu.css" rel="stylesheet">
 </head>
 <body>
     <div id="top">
@@ -30,14 +30,14 @@
                 <li class="menu pointer">稍后再看</li>
                 <li class="menu pointer">收藏夹</li>
                 <li class="menu pointer">历史</li>
-                <li class="pointer">投稿</li>
             </ul>
+            <div id="contribute" class="pointer">投&nbsp;稿</div>
         </div>
     </div>
+
     <div id="comic_bg" style="width: 100%">
         <div id="comic_bg_1" style="width: 100%"></div>
         <div id="comic_bg_2"></div>
-    </div>
     </div>
     <div id="comic_body">
         <img id="comic_cover" src="image/邪神与厨二病少女.jpg">
@@ -70,7 +70,7 @@
                         <i class="iconfont icon-star_full"></i></span>
                         <i class="iconfont icon-star_full"></i></span>
                     </div>
-                    <span style="position: relative;top: -20px;left: 70px">5247人评</span>
+                    <div id="evaluation" style="position: relative;top: -20px;left: 70px"><i id="evaluation_icon" style="font-size: 14px !important;margin-right: 5px;display: none" class="iconfont icon-dianping1"></i><span id="evaluation_text">5247人评</span></div>
                 </div>
             </div>
             <div id="comic_introduction_3">
@@ -100,6 +100,11 @@
     </div>
 </body>
 <script>
+    alert("温馨提示:\r\n" +
+        "请编译后运行\r\n" +
+        "请根据屏幕分辨率调节网页百分比大小\r\n" +
+        "此页面不支持缩放")
+
     var menu = document.getElementsByClassName("menu")
     for(let i=0;i<menu.length;i++){
         menu[i].addEventListener("mouseover",function () {
@@ -116,5 +121,16 @@
             this.style.cursor="pointer"
         })
     }
+
+    var grade = document.getElementById("grade")
+    grade.addEventListener("mouseover",function () {
+        document.getElementById("evaluation_icon").style.display = "inline-block"
+        document.getElementById("evaluation_text").innerHTML = "我要点评"
+        document.getElementById("evaluation").style.cursor="pointer"
+    })
+    grade.addEventListener("mouseout",function () {
+        document.getElementById("evaluation_text").innerHTML = "5247人评"
+        document.getElementById("evaluation_icon").style.display = "none"
+    })
 </script>
 </html>
