@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#top{
+    width: 100%;
+    height: 45px;
+    background-color: #535353;
+    clear: both;
+}
+
+#top_left{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#top_right{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#top_left_ul{
+    margin-left: 300px;
+    list-style: none;
+    height: 100%;
+}
+
+#top_left_ul li{
+    height: 35px;
+    padding-top: 14px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: white;
+    float: left;
+}
+
+#top_right_input{
+    height: 31px;
+    width: 75px;
+    border-style: none;
+    margin-top: 7px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 130px;
+}
+
+.icon-sousuo{
+    margin-left: -30px;
+    top: 10px;
+    position: absolute;
+    font-size: 25px !important;
+    color: #aaa;
+}
+
+.icon-CN_bilibiliB{
+    font-size: 25px !important;
+    color: deepskyblue;
+    position: absolute;
+    top: 7px;
+}
+
+#top_right_ul{
+    list-style: none;
+    height: 100%;
+    float: right;
+    margin-right: 350px;
+}
+
+#top_right_ul li{
+    height: 35px;
+    padding-top: 14px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: white;
+    float: left;
+}
+
+#portrait{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    margin-left: 25px;
+    border-radius: 21px;
+    margin-top: 2px;
+}
+
+.icon-shouji{
+    position: absolute;
+    font-size: 18px !important;
+    top: 13px;
+    color: deepskyblue;
+}
+
+#comic_bg_1{
+    width: 140%;
+    height: 350px;
+    background-image: url("image/邪神与厨二病少女.jpg");
+    background-position: center;
+    background-size: 80% auto;
+    content: "";/* 必须包括 */
+    filter: blur(35px);/* 值越大越模糊 */
+    position: absolute;
+    margin-top: 20px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#comic_bg_2{
+    background-color: black;
+    opacity: 0.4;
+    height: 400px;
+    width: 100%;
+    z-index: 0;
+}
+
+#comic_body{
+    margin-top: -350px;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+#comic_cover{
+    margin-left: 320px;
+    width: 220px;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 8px;
+}
+
+#comic_introduction{
+    display: inline-block;
+    height: 350px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+#comic_introduction_1_title{
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.comic_introduction_1_label{
+    color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-left: 5px;
+}
+
+#comic_introduction_2{
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.rule{
+    height: 35px;
+    width: 1px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+}
+
+#comic_introduction_3{
+    margin-top: 85px;
+    color: white;
+    font-size: 12px;
+}
+
+#comic_introduction_4{
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+    width: 980px;
+    line-height: 20px;
+}
+
+#grade{
+    display: inline-block;
+    float: right;
+    width: 170px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+#score{
+    color: rgb(255,167,38);
+    font-size: 40px;
+}
+
+.icon-star_full{
+    color: rgb(255,167,38);
+    display: inline-block;
+    margin-top: -50px;
+    margin-left: -3px;
+}
+
+.icon-duigou{
+    font-size: 20px !important;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.icon-shouji1{
+    font-size: 35px !important;
+    color: rgb(156,217,125);
+}
+
+.icon-xinlangweibo{
+    font-size: 35px !important;
+    color: rgb(241,108,104);
+    margin-left: 1px;
+}
+
+.icon-qunfengqqkongjian{
+    font-size: 32px !important;
+    color: rgb(241,215,90);
+    position: relative;
+    top: -1px;
+    margin-left: 1px;
+}
+
+.icon-qq-copy{
+    font-size: 36px !important;
+    color: rgb(140,212,255);
+    margin-left: 1px;
+}
+
+#share{
+    display: inline-block;
+    background-color: white;
+    height: 40px;
+    width: 156px;
+    position: relative;
+    top: -25px;
+    left: 150px;
+    border-radius: 20px;
+    padding: 1px 5px;
+}
