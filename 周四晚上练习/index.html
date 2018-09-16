@@ -10,27 +10,27 @@
     <div id="top">
         <div id="top_left">
             <ul id="top_left_ul">
-                <li><i class="iconfont icon-CN_bilibiliB"></i><span style="margin-left: 26px">主站</span></li>
-                <li>画友</li>
-                <li>音频</li>
-                <li>游戏中心</li>
-                <li>直播</li>
-                <li>会员购</li>
-                <li><i class="iconfont icon-shouji"></i><span style="margin-left: 20px">下载APP</span></li>
+                <li class="menu pointer"><i class="iconfont icon-CN_bilibiliB"></i><span style="margin-left: 26px">主站</span></li>
+                <li class="menu pointer">画友</li>
+                <li class="menu pointer">音频</li>
+                <li class="menu pointer">游戏中心</li>
+                <li class="menu pointer">直播</li>
+                <li class="menu pointer">会员购</li>
+                <li class="menu pointer"><i class="iconfont icon-shouji pointer"></i><span style="margin-left: 20px">下载APP</span></li>
             </ul>
         </div>
         <div id="top_right">
             <input id="top_right_input">
-            <i class="iconfont icon-sousuo"></i>
-            <img id="portrait" src="image/Re0.jpg">
+            <i class="iconfont icon-sousuo pointer"></i>
+            <img class="pointer" id="portrait" src="image/Re0.jpg">
             <ul id="top_right_ul">
-                <li>大会员</li>
-                <li>消息</li>
-                <li>动态</li>
-                <li>稍后再看</li>
-                <li>收藏夹</li>
-                <li>历史</li>
-                <li>投稿</li>
+                <li class="menu pointer">大会员</li>
+                <li class="menu pointer">消息</li>
+                <li class="menu pointer">动态</li>
+                <li class="menu pointer">稍后再看</li>
+                <li class="menu pointer">收藏夹</li>
+                <li class="menu pointer">历史</li>
+                <li class="pointer">投稿</li>
             </ul>
         </div>
     </div>
@@ -81,25 +81,40 @@
                 <p>简介：一位少女与恶魔“邪神酱”展开的略危险的同居生活喜剧！魔界的恶魔，通称“邪神酱”某天突然被召唤到了人间界。召唤她的人是住在神保町破旧公寓的略有些腹黑的女大学生“花园百合铃”。虽然召唤了邪神酱，却不知道让她？回到魔界的方法。邪神酱和百合铃迫不得已开始一起生活，但根据邪神酱所说，“如果召唤者死掉我就能回到魔界了”。于是邪神酱所采取的行动是……！？</p>
             </div>
             <div id="comic_introduction_5" style="margin-top: 50px">
-                <div style="width:330px;height: 50px;border-radius: 10px;font-size: 20px;background-color: rgba(255,255,255,0.25)">
+                <div style="display: inline-block;width:330px;height: 50px;border-radius: 10px;font-size: 20px;background-color: rgba(255,255,255,0.25)">
                     <img src="image/2233.png" style="width: 130px;position: relative;top: -30px;left: -20px" >
                     <p style="text-align: center;display: inline-block;position: relative;top: -50px;left: -30px;font-size: 18px;color: white">大会员专享观看特权哦~</p>
                 </div>
-                <div style="position: relative;top: -50px;left: 350px;background-color: rgba(255,255,255,0.25);height: 42px;width: 130px;border: 4px solid rgb(206,205,201);border-radius: 10px">
+                <div class="pointer" style="position: relative;top:-58px;margin-left:10px;display: inline-block;background-color: rgba(255,255,255,0.25);height: 42px;width: 130px;border: 4px solid rgb(206,205,201);border-radius: 10px">
                     <i class="iconfont icon-duigou" style="color: white"></i>
                     <span style="font-size: 18px;color: white;position: relative;top: 10px;left: 25px">已追番</span>
-                    <div id="share" style="">
-                        <i class="iconfont icon-shouji1"></i>
-                        <i class="iconfont icon-xinlangweibo"></i>
-                        <i class="iconfont icon-qunfengqqkongjian"></i>
-                        <i class="iconfont icon-qq-copy"></i>
-                    </div>
+                </div>
+                <div id="share">
+                    <i class="iconfont icon-shouji1 pointer"></i>
+                    <i class="iconfont icon-xinlangweibo pointer"></i>
+                    <i class="iconfont icon-qunfengqqkongjian pointer"></i>
+                    <i class="iconfont icon-qq-copy pointer"></i>
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script>
-    
+    var menu = document.getElementsByClassName("menu")
+    for(let i=0;i<menu.length;i++){
+        menu[i].addEventListener("mouseover",function () {
+            this.style.background="rgba(225,225,225,0.3)"
+        })
+        menu[i].addEventListener("mouseout",function () {
+            this.style.background="none"
+        })
+    }
+
+    var pointer = document.getElementsByClassName("pointer")
+    for(let i=0;i<pointer.length;i++){
+        pointer[i].addEventListener("mouseover",function () {
+            this.style.cursor="pointer"
+        })
+    }
 </script>
 </html>
