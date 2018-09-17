@@ -10,13 +10,19 @@
     <div id="top">
         <div id="top_left">
             <ul id="top_left_ul">
-                <li class="menu pointer"><i class="iconfont icon-CN_bilibiliB"></i><span style="margin-left: 26px">主站</span></li>
+                <li class="menu pointer">
+                    <i class="iconfont icon-CN_bilibiliB"></i>
+                    <span id="master_station">主站</span>
+                </li>
                 <li class="menu pointer">画友</li>
                 <li class="menu pointer">音频</li>
                 <li class="menu pointer">游戏中心</li>
                 <li class="menu pointer">直播</li>
                 <li class="menu pointer">会员购</li>
-                <li class="menu pointer"><i class="iconfont icon-shouji pointer"></i><span style="margin-left: 20px">下载APP</span></li>
+                <li class="menu pointer">
+                    <i class="iconfont icon-shouji pointer"></i>
+                    <span id="download_app">下载APP</span>
+                </li>
             </ul>
         </div>
         <div id="top_right">
@@ -35,8 +41,8 @@
         </div>
     </div>
 
-    <div id="comic_bg" style="width: 100%">
-        <div id="comic_bg_1" style="width: 100%"></div>
+    <div id="comic_bg">
+        <div id="comic_bg_1"></div>
         <div id="comic_bg_2"></div>
     </div>
     <div id="comic_body">
@@ -44,50 +50,53 @@
         <div id="comic_introduction">
             <div id="comic_introduction_1">
                 <b id="comic_introduction_1_title">邪神与厨二病少女</b>
-                <div style="margin-top: -10px" class="comic_introduction_1_label">搞笑</div>
+                <div class="comic_introduction_1_label">搞笑</div>
                 <div class="comic_introduction_1_label">百合</div>
                 <div class="comic_introduction_1_label">日常</div>
                 <div class="comic_introduction_1_label">神魔</div>
             </div>
             <div id="comic_introduction_2">
-                <div style="display: inline-block">
+                <div id="air_num">
                     <b>总播放<br>1291.6万</b>
                 </div>
-                <div class="rule" style="margin-left: 20px;"></div>
-                <div style="display: inline-block;margin-left: 42px">
+                <div class="rule"></div>
+                <div id="subscribe_num">
                     <b>追番人数<br>81.3万</b>
                 </div>
-                <div class="rule" style="margin-left: 20px;"></div>
-                <div style="display: inline-block;margin-left: 42px">
+                <div class="rule"></div>
+                <div id="barrage_num">
                     <b>弹幕总数<br>23.3万</b>
                 </div>
                 <div id="grade">
                     <span id="score">9.2</span>
-                    <div style="display: inline-block;position: relative;top: -18px;left: 10px">
+                    <div id="grade_icon">
                         <i class="iconfont icon-star_full"></i></span>
                         <i class="iconfont icon-star_full"></i></span>
                         <i class="iconfont icon-star_full"></i></span>
                         <i class="iconfont icon-star_full"></i></span>
                         <i class="iconfont icon-star_full"></i></span>
                     </div>
-                    <div id="evaluation" style="position: relative;top: -20px;left: 70px"><i id="evaluation_icon" style="font-size: 14px !important;margin-right: 5px;display: none" class="iconfont icon-dianping1"></i><span id="evaluation_text">5247人评</span></div>
+                    <div id="evaluation">
+                        <i id="evaluation_icon" class="iconfont icon-dianping1"></i>
+                        <span id="evaluation_text">5247人评</span>
+                    </div>
                 </div>
             </div>
             <div id="comic_introduction_3">
                 <span>2018年7月9日&nbsp;开播</span>
-                <span style="margin-left: 20px">连载中，每周一23:00更新</span>
+                <span id="serialize">连载中，每周一23:00更新</span>
             </div>
             <div id="comic_introduction_4">
                 <p>简介：一位少女与恶魔“邪神酱”展开的略危险的同居生活喜剧！魔界的恶魔，通称“邪神酱”某天突然被召唤到了人间界。召唤她的人是住在神保町破旧公寓的略有些腹黑的女大学生“花园百合铃”。虽然召唤了邪神酱，却不知道让她？回到魔界的方法。邪神酱和百合铃迫不得已开始一起生活，但根据邪神酱所说，“如果召唤者死掉我就能回到魔界了”。于是邪神酱所采取的行动是……！？</p>
             </div>
-            <div id="comic_introduction_5" style="margin-top: 50px">
-                <div style="display: inline-block;width:330px;height: 50px;border-radius: 10px;font-size: 20px;background-color: rgba(255,255,255,0.25)">
-                    <img src="image/2233.png" style="width: 130px;position: relative;top: -30px;left: -20px" >
-                    <p style="text-align: center;display: inline-block;position: relative;top: -50px;left: -30px;font-size: 18px;color: white">大会员专享观看特权哦~</p>
+            <div id="comic_introduction_5">
+                <div id="member">
+                    <img id="member_img" src="image/2233.png">
+                    <p id="member_p">大会员专享观看特权哦~</p>
                 </div>
-                <div class="pointer" style="position: relative;top:-58px;margin-left:10px;display: inline-block;background-color: rgba(255,255,255,0.25);height: 42px;width: 130px;border: 4px solid rgb(206,205,201);border-radius: 10px">
-                    <i class="iconfont icon-duigou" style="color: white"></i>
-                    <span style="font-size: 18px;color: white;position: relative;top: 10px;left: 25px">已追番</span>
+                <div class="pointer" id="subscribe">
+                    <i class="iconfont icon-duigou"></i>
+                    <span id="subscribe_span">已追番</span>
                 </div>
                 <div id="share">
                     <i class="iconfont icon-shouji1 pointer"></i>
@@ -100,10 +109,10 @@
     </div>
 </body>
 <script>
-    alert("温馨提示:\r\n" +
-        "请编译后运行\r\n" +
-        "请根据屏幕分辨率调节网页百分比大小\r\n" +
-        "此页面不支持缩放")
+    // alert("温馨提示:\r\n" +
+    //     "请编译后运行\r\n" +
+    //     "请根据屏幕分辨率调节网页百分比大小\r\n" +
+    //     "此页面不支持缩放")
 
     var menu = document.getElementsByClassName("menu")
     for(let i=0;i<menu.length;i++){
