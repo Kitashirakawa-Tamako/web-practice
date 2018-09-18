@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #top{
@@ -119,8 +119,9 @@
     color: deepskyblue;
 }
 
+
 #comic_bg_1{
-    width: 140%;
+    width: 100%;
     height: 350px;
     background-image: url("image/邪神与厨二病少女.jpg");
     background-position: center;
